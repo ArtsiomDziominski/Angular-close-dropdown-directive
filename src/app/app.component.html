@@ -1,0 +1,21 @@
+<div class="container">
+  <button
+    class="select"
+    (keydown.enter)="choiceItemEnter()"
+    appCloseDropdown
+    (clickOutSide)="isOpen = false"
+    (keydown.arrowUp)="arrowUp()"
+    (keydown.arrowDown)="arrowDown()"
+    (click)="openMenu()"
+  >
+    <span class="selected">{{item}}</span>
+    <div class="caret caret-down" [class.caret-up]="!isOpen"></div>
+  </button>
+  <div class="menu" *ngIf="isOpen">
+    <button
+      *ngFor="let item of arrayItem"
+      (click)="choiceItem(item)"
+      [class.menu-hover]="item === arrayItem[numberInArray]"
+    >{{item}}</button>
+  </div>
+</div>
