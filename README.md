@@ -1,6 +1,9 @@
-# close-dropdown
+# close-dropdown-directive
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
+
+![directive1](https://user-images.githubusercontent.com/86887225/187185806-7a545ce0-1906-4a04-9465-3088cb1d4c2b.gif)
+
 
 ## Development server
 
